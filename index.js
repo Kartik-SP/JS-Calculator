@@ -1,3 +1,23 @@
-function display(){
-    document.getElementById(`heading`).innerText = "JS is working!!";
+let expression = "";
+let display = document.querySelector(".calculator-display");
+
+function appendToDisplay(operator){
+    if(operator == "-" && expression == "0"){
+        expression = "";
+    }
+    expression += operator;
+    display.innerText = expression;
+}
+function ResultDisplay(){
+    try{
+        expression = eval(expression);
+        display.innerText = expression;
+    }
+    catch(error){
+        display.innerText = "ERROR";
+    }
+}
+function Clear(){
+    expression = "";
+    display.innerText = expression;
 }
