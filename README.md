@@ -1,1 +1,1 @@
-# JS-Calculator
+This is a working calculator using fully operating on vanilla JavaScript
