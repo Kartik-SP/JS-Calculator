@@ -1,4 +1,5 @@
 let expression = "";
+const reset_expression = 0;
 let display = document.querySelector(".calculator-display");
 
 function appendToDisplay(operator){
@@ -18,6 +19,6 @@ function ResultDisplay(){
     }
 }
 function Clear(){
-    expression = "";
+    expression = reset_expression;
     display.innerText = expression;
 }
